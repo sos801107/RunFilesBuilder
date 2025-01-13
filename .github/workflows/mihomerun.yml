@@ -6,7 +6,7 @@
 # Blog: wkdaily.cpolar.top
 #=================================================
 
-name: Make MiHomo run files
+name: Make MiHomo run files for 23.05
 
 on:
   workflow_dispatch:
