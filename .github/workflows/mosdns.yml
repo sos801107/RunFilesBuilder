@@ -42,7 +42,7 @@ jobs:
           echo "Get PACKAGE_VERSION=$PACKAGE_VERSION"
           
           FILE_PREFIXES=("luci-app-mosdns" "mosdns" "v2dat" "v2ray-geoip" "v2ray-geosite")
-         # EXCLUDE_PREFIXES=("luci-app-naiveproxy" "simple-obfs-client" "simple-obfs-server")
+          EXCLUDE_PREFIXES=("luci-app-naiveproxy" "simple-obfs-client" "simple-obfs-server")
           
           BASE_URL_X86="https://dl.openwrt.ai/$PACKAGE_VERSION/x86_64/kiddin9/"
           echo "Fetching x86 directory page from $BASE_URL_X86"
