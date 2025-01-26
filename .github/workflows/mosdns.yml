@@ -125,8 +125,8 @@ jobs:
         
       - name: mv pw2 to main dir
         run: |
-          mv x86_64/depends/luci-app-passwall*.ipk x86_64
-          mv a53/depends/luci-app-passwall*.ipk a53
+          mv x86_64/depends/luci-app-mosdns*.ipk x86_64
+          mv a53/depends/luci-app-mosdns*.ipk a53
           echo "List main dir ipk files for x86"
           ls x86_64
           echo "List main dir ipk files for a53"
@@ -227,8 +227,8 @@ jobs:
             echo "APP_VERSION=$appversion" >> $GITHUB_ENV
             release_name=$(TZ="Asia/Shanghai" date +'%Y-%m-%d %H:%M Build')
             echo "RELEASE_NAME=$release_name" >> $GITHUB_ENV
-            ./makeself.sh x86_64/ passwall_x86_64_$appversion.run "by github action" ./install.sh
-            ./makeself.sh a53/ passwall_aarch64_cortex-a53_$appversion.run "by github action" ./install.sh
+            ./makeself.sh x86_64/ mosdns_x86_64_$appversion.run "by github action" ./install.sh
+            ./makeself.sh a53/ mosdns_aarch64_cortex-a53_$appversion.run "by github action" ./install.sh
             
             
       
